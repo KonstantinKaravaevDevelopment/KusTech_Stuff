@@ -1,11 +1,13 @@
 import requests
 from PIL import Image
+import os
 
 import streamlit as st
 from streamlit_lottie import st_lottie
 
 #Dodajemy Icone
-ikonka = Image.open(r"images\Icon_webpage.png")
+file_path = os.path.join("images", "Icon_webpage.png")
+ikonka = Image.open(file_path)
 
 st.set_page_config(
     page_title='Kompetencje',
@@ -41,7 +43,9 @@ with st.container():
 
                  Poniżej załączamy pracę inżynierską do poglądu 👀
                  ''')
-        with open(r"files\Praca_Inżynierska_-_Konstantin_Karavaev_303144.pdf", "rb") as file:
+        
+        file_pa = os.path.join("files", "Praca_Inżynierska_-_Konstantin_Karavaev_303144.pdf")
+        with open(file_pa, "rb") as file:
             btn = st.download_button(
                     label="Pobierz pracę inżynierską",
                     data=file,

@@ -1,12 +1,14 @@
 
 import requests
 from PIL import Image
+import os
 
 import streamlit as st
 from streamlit_lottie import st_lottie
 
 #Dodajemy Icone
-ikonka = Image.open(r"images\Icon_webpage.png")
+file_path = os.path.join("images", "Icon_webpage.png")
+ikonka = Image.open(file_path)
 
 st.set_page_config(
     page_title='KusTech Stuff',
