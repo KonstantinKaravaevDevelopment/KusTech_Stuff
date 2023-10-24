@@ -8,7 +8,7 @@ from streamlit_lottie import st_lottie
 ikonka = Image.open(r"images\Icon_webpage.png")
 
 st.set_page_config(
-    page_title='💻 Biurowe sprawy',
+    page_title='⚙️ Algorytmizacja',
     page_icon=ikonka,
     layout='wide',
     
