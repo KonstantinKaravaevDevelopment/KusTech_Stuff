@@ -27,6 +27,6 @@ lottie_rocket = load_lottieurl('https://lottie.host/c6a39c47-7387-4b0b-b7a3-1b2e
 
 with st.container():
     st.header('Will be soon!')
-    st.subheader('Projekt zostanie dodany w grudniu.')
+    st.subheader('Projekt zostanie dodany w lutym.')
     st.write("---")
     st_lottie(lottie_rocket, height=400, key='coding')
